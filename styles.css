@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: hsl(225, 100%, 94%) url(images/pattern-background-desktop.svg);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-card {
+    border-radius: 16px;
+    margin-block: 16px;
+    background-color: white;
+    width: 90%;
+    max-width: 350px;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.card-main {
+    text-align: center;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.card-main > h1 {
+    font-weight: 900;
+} 
+.card-main > p {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+.box {
+    padding: 1em;
+    margin: 2em;
+    align-items: center;
+    display: flex;
+    background-color:hsl(225, 100%, 98%);
+    border-radius: 12px;
+    gap: 1em;
+}
+
+.box h2 {
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.box p {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.boximg {
+    height: 2em;
+}
+.box .btn-change {
+ font-weight: 700;
+}
+
+.box .details {
+    font-size: 1em;
+    text-align: left;
+    flex-grow: 1;
+}
+ .btn-pay .btn-cancel {
+
+ }
