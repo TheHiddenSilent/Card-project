@@ -24,6 +24,7 @@ body {
     width: 90%;
     max-width: 350px;
     overflow: hidden;
+    box-shadow: 0 1em 1em rgba(67, 67, 67, 0.047);
 }
 
 .card-img img {
@@ -32,7 +33,7 @@ body {
 
 .card-main {
     text-align: center;
-    padding: 2em;
+    padding-top: 2em;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -48,8 +49,8 @@ body {
 }
 
 .box {
-    padding: 1em;
-    margin: 2em;
+    padding: 1.2em;
+    margin: 1em 2em;
     align-items: center;
     display: flex;
     background-color:hsl(225, 100%, 98%);
@@ -67,18 +68,45 @@ body {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.boximg {
-    height: 2em;
-}
-.box .btn-change {
- font-weight: 700;
-}
-
 .box .details {
     font-size: 1em;
     text-align: left;
     flex-grow: 1;
 }
- .btn-pay .btn-cancel {
+.change a {
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 700;
+}
 
- }
+.change a:active {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, .8)
+}
+
+.btn {
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1em;
+    transition: .3s;
+    border-radius: .5em;
+    margin: 0em 2em;
+}
+
+.btn.pay {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0 1em 1em rgba(67, 67, 67, 0.162);
+}
+
+.btn.pay:active {
+    background-color: hsla(245, 75%, 52%, .7);
+}
+
+.btn.ccl {
+    color: hsl(224, 23%, 55%)
+}
+
+.btn.ccl:active {
+    color: hsl(223, 47%, 23%);
+}
